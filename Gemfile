@@ -54,6 +54,10 @@ gem "xcov", "~> 1.4.1"
 # A documentation generation tool for Ruby.
 gem "yard", "~> 0.9.11"
 
+gem "xcpretty", git: 'https://github.com/xcpretty/xcpretty.git', branch: 'master'
+
+gem "xcpretty-travis-formatter", git: 'https://github.com/itamilan/xcpretty-travis-formatter.git', branch: 'bugfix/use-xcpretty-as-mater'
+
 gemspec(path: ".")
 
 plugins_path = File.join(File.expand_path("..", __FILE__), "fastlane", "Pluginfile")
